@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/rg"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:orientation="horizontal"
         >
         <RadioButton
@@ -27,11 +27,13 @@
             android:button="@null"
             android:drawableTop="@drawable/back1"
             android:text="首页"
+            android:gravity="center"
             android:id="@+id/shou"
             />
         <RadioButton
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:gravity="center"
             android:layout_height="match_parent"
             android:button="@null"
             android:drawableTop="@drawable/back2"
@@ -41,6 +43,7 @@
         <RadioButton
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:gravity="center"
             android:layout_height="match_parent"
             android:button="@null"
             android:drawableTop="@drawable/back3"
@@ -51,6 +54,7 @@
         <RadioButton
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:gravity="center"
             android:layout_height="match_parent"
             android:button="@null"
             android:drawableTop="@drawable/back4"
@@ -62,6 +66,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:button="@null"
+            android:gravity="center"
             android:drawableTop="@drawable/back5"
             android:text="我的"
             android:id="@+id/my"

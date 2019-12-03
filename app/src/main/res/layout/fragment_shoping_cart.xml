@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ShopingCartFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="购物车"
+        />
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@mipmap/gouwuche"
+    android:layout_gravity="center_horizontal"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="你的购物车没有商品"
+        android:textSize="30dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:text="去购物"
+        android:layout_marginTop="10dp"
+        android:id="@+id/shop"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="推荐搭配"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/gv"
+        android:numColumns="2"
+        android:layout_height="match_parent">
+
+    </GridView>
+</LinearLayout>

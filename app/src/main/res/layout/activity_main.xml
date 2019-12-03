@@ -25,9 +25,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:button="@null"
-            android:drawableTop="@mipmap/shouye"
+            android:drawableTop="@drawable/back1"
             android:text="首页"
-            android:gravity="center"
             android:id="@+id/shou"
             />
         <RadioButton
@@ -35,9 +34,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:button="@null"
-            android:drawableTop="@mipmap/zhonglei"
+            android:drawableTop="@drawable/back2"
             android:text="分类"
-            android:gravity="center"
             android:id="@+id/fen"
             />
         <RadioButton
@@ -45,9 +43,9 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:button="@null"
-            android:drawableTop="@mipmap/faxian"
+            android:drawableTop="@drawable/back3"
             android:text="发现"
-            android:gravity="center"
+
             android:id="@+id/fa"
             />
         <RadioButton
@@ -55,9 +53,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:button="@null"
-            android:drawableTop="@mipmap/gouwuche1"
+            android:drawableTop="@drawable/back4"
             android:text="购物车"
-            android:gravity="center"
             android:id="@+id/gou"
             />
         <RadioButton
@@ -65,9 +62,8 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:button="@null"
-            android:drawableTop="@mipmap/wode"
+            android:drawableTop="@drawable/back5"
             android:text="我的"
-            android:gravity="center"
             android:id="@+id/my"
             />
     </RadioGroup>

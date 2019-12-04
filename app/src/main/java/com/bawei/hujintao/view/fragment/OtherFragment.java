@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import com.bawei.hujintao.R;
 import com.bawei.hujintao.base.BaseFragment;
+import com.bawei.hujintao.base.BasePresenter;
+import com.bawei.hujintao.presenter.ShopPresenter;
 import com.bawei.hujintao.util.NetUtil;
 
 /**
@@ -18,6 +20,11 @@ public class OtherFragment extends BaseFragment {
 
     private TextView name,cont;
     private LinearLayout ll;
+
+    @Override
+    protected BasePresenter providePresenter() {
+        return new ShopPresenter();
+    }
 
     @Override
     protected void initView(View view) {

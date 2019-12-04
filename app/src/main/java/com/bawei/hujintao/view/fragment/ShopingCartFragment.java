@@ -27,11 +27,16 @@ import java.util.List;
  * 作者:  胡锦涛
  * 时间:  2019/12/3 0003 上午 9:12
  */
-public class ShopingCartFragment extends BaseFragment implements IShopContract, IShopContract.IViewCallBack {
+public class ShopingCartFragment extends BaseFragment<ShopPresenter> implements IShopContract.IView{
 
 
     private GridView gv;
     private Button shop;
+
+    @Override
+    protected ShopPresenter providePresenter() {
+        return new ShopPresenter();
+    }
 
     @Override
     protected void initView(View view) {
@@ -55,13 +60,12 @@ public class ShopingCartFragment extends BaseFragment implements IShopContract, 
 
     @Override
     protected void initData() {
-        ShopPresenter shopPresenter = new ShopPresenter();
-        shopPresenter.getShopData(this);
+        prsenter.getShopData();
     }
+
 
     @Override
     public void onSuccess(Mall mall) {
-        //获取数据
         List<Mall.ShopGridDataBean> shopGridData = mall.getShopGridData();
         gv.setAdapter(new MyAdapter(shopGridData));
     }

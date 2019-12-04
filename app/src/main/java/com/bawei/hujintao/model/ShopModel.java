@@ -10,14 +10,15 @@ import com.google.gson.Gson;
  * 作者:  胡锦涛
  * 时间:  2019/12/3 0003 上午 9:53
  */
-public class ShopModel {
+public class ShopModel implements IShopContract.IModel{
     String st="http://blog.zhaoliang5156.cn/api/mall/mall.json";
-    //请求数据
-    public void getShopData(final IShopContract.IModelCallBack iModelCallBack){
+
+    @Override
+    public void getShopData(final IModelCallBack iModelCallBack) {
+        //请求数据
         NetUtil.getInstance().getJson(st, new NetUtil.MyCallBack() {
             @Override
             public void onGetJson(String json) {
-                //解析
                 Mall mall = new Gson().fromJson(json, Mall.class);
                 iModelCallBack.onSuccess(mall);
             }
@@ -28,4 +29,6 @@ public class ShopModel {
             }
         });
     }
+
+
 }
